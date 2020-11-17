@@ -12,11 +12,11 @@
 <script src="../js/webssh.js" charset="utf-8"></script>
 <script>
     openTerminal( {
-        /*operate:'connect',
-        host: '',//IP
-        port: '',//端口号
-        username: '',//用户名
-        password: ''//密码*/
+        operate:'connect',
+        host: '47.108.94.120',//IP
+        port: '22',//端口号
+        username: 'root',//用户名
+        password: '5tgy-15823809568'//密码
     });
     function openTerminal(options){
         var client = new WSSHClient();
@@ -25,7 +25,7 @@
             rows: 37,
             cursorBlink: true, // 光标闪烁
             cursorStyle: "block", // 光标样式  null | 'block' | 'underline' | 'bar'
-            scrollback: 800, //回滚
+            scrollback: 1200, //回滚
             tabStopWidth: 8, //制表宽度
             screenKeys: true
         });
